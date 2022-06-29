@@ -4,6 +4,38 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: rgb(127, 193, 255) !important;
+}
+
+.card-center-everything{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-card{
+    width: 	30rem;
+}
+
+.quiz-answer{
+    transition: ease-in-out 150ms;
+}
+
+.quiz-answer:hover{
+    cursor: pointer;
+    transition: ease-in-out 150ms;
+    border: solid 1px rgb(124, 124, 124);
+    background-color: rgb(127,193,255);
+}
+
 @media (max-width: 368px) {
 
 }
@@ -19,7 +51,6 @@ html {
 @media (max-width: 992px) {
 
 }
-
 
 @media (max-width: 1200px) { 
 

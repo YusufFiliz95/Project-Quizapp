@@ -1,3 +1,11 @@
+//Onload all JS functions
+function init(){
+  includeHTML();
+  showQuestion();
+  questionAmounts();
+}
+
+
 //FUNCTION FOR INCLUDING OTHER HTML SNIPPETS
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
