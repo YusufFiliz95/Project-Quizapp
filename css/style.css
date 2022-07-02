@@ -49,14 +49,21 @@ body{
     transition: ease-in-out 150ms;
 }
 
-.exaplanation-card{
+.explanation-card{
     background-color: white;
-    width: 30rem;
-    height: 40rem;
+    width: 33rem;
+    height: 24rem;
     border-radius: 0.3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.explanation-image{
+    width: 30rem;
+    height: 15rem;
+    object-fit: cover;
+    margin-top: 1rem;
 }
 
 .card-question{
@@ -69,16 +76,16 @@ body{
 }
 
 .next-question-btn{
-    width: 100%;
+    width: 96%;
     display: flex;
     justify-content: end;
-    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .explanation{
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgba(0, 0, 0, 0.822);
     width: 100%;
     height: 100vh;
     z-index: 1;
@@ -95,7 +102,7 @@ body{
 }
 
 .answer-title{
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .answer-text{
@@ -106,7 +113,6 @@ body{
 
 .finish{
     text-align: center;
-    width: 30rem;
     height: 15rem;
 }
 
@@ -126,17 +132,99 @@ body{
     align-items: center;
 }
 
-@media (max-width: 368px) {
-
+.progress{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
 }
+
+.disable-div {
+    pointer-events: none;
+}
+
+.info-btn{
+    width: 2rem;
+    height: 2rem;
+    transition: ease-in-out 150ms;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.info-btn:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.info-btn img{
+    width: 2rem;
+}
+
 
 @media (max-width: 576px) {
+    .card{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .card-question{
+        font-size: 1.1rem;
+    }
+
+    .card-body{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 456px) {
+    .card-question{
+        font-size: 1rem;
+    }
+
+    .answer-text{
+        font-size: 0.9rem;
+    }
+
+    .card-body{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 455px) {
+    .card-question{
+        font-size: 0.9rem;
+    }
+
+    .card-body{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .card-question{
+        font-size: 0.85rem;
+    }
+
+    .info-btn{
+        width: 1rem;
+    }
+
+    .info-btn img{
+        width: 1rem;
+    }
+
+    .answer-text{
+        font-size: 0.9rem;
+    }
+
+    .explanation-card{
+        width: 22rem;
+    }
+
+    .card-body{
+        width: 22rem;
+    }
 
 }
 
-@media (max-width: 768px) {
-
-}
 
 @media (max-width: 992px) {
 
