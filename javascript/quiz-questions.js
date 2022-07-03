@@ -173,6 +173,7 @@ let AUDIO_INCORRECT = new Audio('sounds/incorrect.mp3');
     AUDIO_INCORRECT.volume = 0.3;
 
 
+
 function questionAmounts(){
     document.getElementById('quizQuestionAmounts').innerHTML = questions.length;
 }
@@ -187,7 +188,7 @@ function showQuestion(){
 }
 
 function gameIsOver(){
-    currenQuestion >= questions.length
+    return currenQuestion >= questions.length;
 }
 
 function showEndScreen(){
