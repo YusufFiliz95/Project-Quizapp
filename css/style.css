@@ -272,11 +272,11 @@ body {
     }
 
     .explanation-card{
-        width: 22rem;
+        width: 100%;
     }
 
     .card-body{
-        width: 22rem;
+        width: 100%;
     }
 
 }

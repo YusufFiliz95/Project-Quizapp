@@ -224,19 +224,27 @@ function answer(selection){
     let idOfRightAnswer = `answer_${question['right_answer']}`;
 
     if (selectedQuestionNumber == question['right_answer']){ 
-        document.getElementById(selection).parentNode.classList.add('bg-success'); 
-        setTimeout(showExplanation, 2000);
-        disableButtons();
-        AUDIO_CORRECT.play();
-        rightAnswers++;
+        rightAnswer(selection,);
     } else{
-        document.getElementById(selection).parentNode.classList.add('bg-danger'); 
-        document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success'); 
-        setTimeout(showExplanation, 2000);
-        disableButtons();
-        AUDIO_INCORRECT.play();
+        wrongAnswer(selection, idOfRightAnswer);
     }
-        setTimeout(disableButton, 2000)
+        setTimeout(disableButton, 1000)
+}
+
+function rightAnswer(selection){
+    document.getElementById(selection).parentNode.classList.add('bg-success'); 
+    setTimeout(showExplanation, 1000);
+    disableButtons();
+    AUDIO_CORRECT.play();
+    rightAnswers++;
+}
+
+function wrongAnswer(selection, idOfRightAnswer){
+    document.getElementById(selection).parentNode.classList.add('bg-danger'); 
+    document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success'); 
+    setTimeout(showExplanation, 1000);
+    disableButtons();
+    AUDIO_INCORRECT.play();
 }
 
 function disableButtons(){
